@@ -39,15 +39,8 @@ public interface Subject {
 
     public default void notifyObservers() {
         for (Observer obs : observers) {
-            try {
-                Thread.sleep(5000);
-                obs.update(this);
-            } //        observers.forEach((observer) -> observer.update(this));
-            catch (InterruptedException ex) {
-                Logger.getLogger(Subject.class.getName()).log(Level.SEVERE, null, ex);
-            }
+            obs.update(this);
         }
-
     }
 
 }
