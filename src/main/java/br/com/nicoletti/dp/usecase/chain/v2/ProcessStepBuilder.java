@@ -1,7 +1,5 @@
 package br.com.nicoletti.dp.usecase.chain.v2;
 
-import br.com.nicoletti.dp.usecase.chain.*;
-
 /**
  *
  * @author nicoletti
